@@ -97,13 +97,24 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
-    z-index: 10000; /* Asegúrate de que sea mayor al del avatar */
+    z-index: 10000; 
 }
 
 #Gif {
         width: 70%; /* Ocupa todo el ancho del contenedor */
         height: auto; /* Mantiene la proporción del GIF */
         border-radius: 8px; /* Redondea las esquinas para que coincidan con el popup */
+        animation: zoomIn 0.5s ease-in-out;
+}
+@keyframes zoomIn {
+    from {
+        transform: scale(0.90);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
             }
 
 .popup-content {
@@ -216,8 +227,7 @@ footer {
         <img class="logoblanco" src="AI-Academy-logo-white.png" alt="AI Academy Logo">
     </header>
     <main>
-        <h1>Professional Certificate: Gestión de Proyectos con IA</h1>
-               <div class="avatar-container active" id="avatar1">
+                       <div class="avatar-container active" id="avatar1">
             <h2 style="color:rgb(255, 255, 255);">Reclutador</h2>
             <script>
                 !function(window){
