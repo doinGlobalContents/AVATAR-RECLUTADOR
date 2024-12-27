@@ -100,6 +100,11 @@ footer {
     z-index: 10000; /* Asegúrate de que sea mayor al del avatar */
 }
 
+#Gif {
+        width: 70%; /* Ocupa todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción del GIF */
+        border-radius: 8px; /* Redondea las esquinas para que coincidan con el popup */
+            }
 
 .popup-content {
     background-color: #fff;
@@ -117,7 +122,8 @@ footer {
 }
 
 .popup-content p {
-    margin: 15px 0;
+    margin: 10px 0;
+    line-height: 1.5;
 }
 
 .popup .continue-button {
@@ -144,6 +150,8 @@ footer {
     font-size: 24px;
     cursor: pointer;
 }
+
+
 
 /* Estilos para pantallas menores a 600px */
 @media (max-width: 600px) {
@@ -272,9 +280,11 @@ footer {
         <div class="popup-content">
             <span id="closePopup" class="close">&times;</span>
             <h2>¡Importante!</h2>
-            <p><b>Antes de comenzar, por favor tenga en cuenta las siguientes indicaciones:</b></p>
-            <p><b>1. Active su micrófono desde el navegador:</b> Para aceptar los permisos, haga clic en "Permitir". Este ajuste solo es necesario realizarlo una vez.</p>
-            <p><b>2. Configure su conversación:</b> Haga clic en "Chat Now" y seleccione el idioma "Spanish" para comenzar.</p>
+            <p><b>Antes de comenzar, tenga en cuenta las siguientes indicaciones:</b></p>
+            <p><b>1. Configure su conversación:</b> Haga clic en <b>"Chat now"</b> y seleccione el idioma <b>"Spanish"</b> para comenzar.</p>
+            <img id="Gif" src="https://i.gifer.com/3OsMY.gif" alt="Ejemplo de Configuración">
+            <p><b>2. Active su micrófono desde el navegador:</b> Para aceptar los permisos, haga clic en <b>"Permitir mientras visitas el sitio"</b>. Este ajuste se realiza por única vez. </p>
+             
             <button id="continueButton" class="continue-button">Continuar</button>
         </div>
     </div>
